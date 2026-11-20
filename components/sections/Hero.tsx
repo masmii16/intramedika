@@ -60,7 +60,7 @@ export default function Hero() {
             />
             <div className="leading-tight">
               <b className="block text-sm lg:text-[0.83vw]">{t("BPJS Kesehatan")}</b>
-              <span className="text-xs lg:text-[0.72vw] text-white/90">{t("Terintegrasi Penuh")}</span>
+              <span className="block text-xs lg:text-[0.72vw] text-white/90">{t("Terintegrasi Penuh")}</span>
             </div>
           </div>
           <div className="rounded-xl lg:rounded-[0.7vw] bg-[#0b5d2e] text-white pl-2 pr-4 py-2 lg:py-0 lg:h-[3.3vw] lg:pl-[0.6vw] lg:pr-[1.1vw] flex gap-3 lg:gap-[0.75vw] items-center shadow-md">
@@ -75,7 +75,7 @@ export default function Hero() {
             />
             <div className="leading-tight">
               <b className="block text-sm lg:text-[0.83vw]">{t("SATUSEHAT")}</b>
-              <span className="text-xs lg:text-[0.72vw] text-white/90">{t("Terhubung ke Kemenkes RI")}</span>
+              <span className="block text-xs lg:text-[0.72vw] text-white/90">{t("Terhubung ke Kemenkes RI")}</span>
             </div>
           </div>
           <div className="rounded-xl lg:rounded-[0.7vw] bg-[#0b5d2e] text-white pl-2 pr-4 py-2 lg:py-0 lg:h-[3.3vw] lg:pl-[0.6vw] lg:pr-[1.1vw] flex gap-3 lg:gap-[0.75vw] items-center shadow-md">
@@ -90,7 +90,7 @@ export default function Hero() {
             />
             <div className="leading-tight">
               <b className="block text-sm lg:text-[0.83vw]">{t("PSE Kominfo")}</b>
-              <span className="text-xs lg:text-[0.72vw] text-white/90">{t("Terdaftar Resmi")}</span>
+              <span className="block text-xs lg:text-[0.72vw] text-white/90">{t("Terdaftar Resmi")}</span>
             </div>
           </div>
           <div className="rounded-xl lg:rounded-[0.7vw] bg-[#0b5d2e] text-white pl-2 pr-4 py-2 lg:py-0 lg:h-[3.3vw] lg:pl-[0.6vw] lg:pr-[1.1vw] flex gap-3 lg:gap-[0.75vw] items-center shadow-md">
@@ -105,7 +105,7 @@ export default function Hero() {
             />
             <div className="leading-tight">
               <b className="block text-sm lg:text-[0.83vw]">{t("TTE")}</b>
-              <span className="text-xs lg:text-[0.72vw] text-white/90">{t("Tanda Tangan Digital")}</span>
+              <span className="block text-xs lg:text-[0.72vw] text-white/90">{t("Tanda Tangan Digital")}</span>
             </div>
           </div>
         </div>

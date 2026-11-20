@@ -124,7 +124,7 @@ export default function PlatformDigital() {
             </div>
             <div className="card overflow-hidden flex flex-col">
               <div className="relative h-28 bg-gradient-to-r from-mint via-mint/60 to-white flex items-center">
-                <div className="relative z-10 flex items-center gap-3 pl-5 pr-2">
+                <div className="relative z-10 flex items-center gap-3 pl-5 pr-3 shrink-0">
                   <div className="w-12 h-12 rounded-xl bg-white shadow grid place-items-center text-g6 shrink-0">
                     <Icon name="heart-handshake" className="w-7 h-7" />
                   </div>
@@ -135,18 +135,24 @@ export default function PlatformDigital() {
                   </h3>
                 </div>
                 <div
-                  className="absolute right-0 top-0 h-full hidden sm:block"
+                  className="relative self-stretch ml-auto flex-1 min-w-0 max-w-[205px] overflow-hidden hidden sm:block"
                   style={{
-                    aspectRatio: "278/152",
-                    background: "url('/assets/platform-digital.webp') no-repeat",
-                    backgroundSize: "638.13% auto",
-                    backgroundPosition: "96.93% 6.26%",
                     WebkitMaskImage: "linear-gradient(to right,transparent,#000 22%)",
                     maskImage: "linear-gradient(to right,transparent,#000 22%)",
                   }}
-                  role="img"
-                  aria-label=""
-                />
+                >
+                  <div
+                    className="absolute right-0 top-0 h-full"
+                    style={{
+                      aspectRatio: "278/152",
+                      background: "url('/assets/platform-digital.webp') no-repeat",
+                      backgroundSize: "638.13% auto",
+                      backgroundPosition: "96.93% 6.26%",
+                    }}
+                    role="img"
+                    aria-label=""
+                  />
+                </div>
               </div>
               <ul className="px-5 pt-4 space-y-2 text-sm text-slate-700 flex-1">
                 <li className="flex gap-2.5">
