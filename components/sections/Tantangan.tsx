@@ -57,7 +57,7 @@ export default function Tantangan() {
                 <div>
                   <b className="block text-lg xl:text-xl font-extrabold text-navy">{t("Data Terpisah")}</b>
                   <p className="mt-2 text-[15px] leading-relaxed text-[#1e2a3a]">
-                    {t("Informasi klinik, operasional, dan keuangan berada di berbagai sistem yang tidak terhubung.")}
+                    {t("Informasi klinis, operasional, dan keuangan berada di berbagai sistem yang tidak terhubung.")}
                   </p>
                 </div>
               </div>

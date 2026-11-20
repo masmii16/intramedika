@@ -309,7 +309,7 @@ export default function Interoperabilitas() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex items-center gap-6">
+        <div className="mt-12 flex items-center gap-">
           <span className="hidden md:block flex-1 h-0.5 bg-[#c6f135]" />
           <h3 className="text-center text-2xl md:text-[2rem] font-extrabold tracking-tight">
             {t("Kesiapan Interoperabilitas untuk Ekosistem Layanan Kesehatan Indonesia")}
@@ -319,7 +319,7 @@ export default function Interoperabilitas() {
         <p className="mt-3 text-center text-lg text-white/90">
           {t("Terhubung ke seluruh sistem nasional dan internasional yang dibutuhkan.")}
         </p>
-        <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="mt-8 flex flex-wrap justify-center gap-4 [&>*]:w-[calc(50%-0.5rem)] md:[&>*]:w-[calc(33.33%-0.67rem)] lg:[&>*]:w-[calc(25%-0.75rem)]">
           <div className="rounded-2xl border-2 border-white/80 px-3.5 py-4 flex items-start gap-2.5 hover:bg-white/10 transition">
             <Icon name="settings" className="w-7 h-7 shrink-0" />
             <div className="leading-tight">
@@ -356,6 +356,13 @@ export default function Interoperabilitas() {
             </div>
           </div>
           <div className="rounded-2xl border-2 border-white/80 px-3.5 py-4 flex items-start gap-2.5 hover:bg-white/10 transition">
+            <Icon name="scan-line" className="w-7 h-7 shrink-0" />
+            <div className="leading-tight">
+              <b className="block text-base xl:text-[1.05rem] font-extrabold whitespace-nowrap">{t("DICOM")}</b>
+              <span className="block mt-1.5 text-sm text-white/90">{t("Data Pencitraan Medis")}</span>
+            </div>
+          </div>
+          <div className="rounded-2xl border-2 border-white/80 px-3.5 py-4 flex items-start gap-2.5 hover:bg-white/10 transition">
             <span
               aria-hidden="true"
               className="block h-7 shrink-0"
@@ -373,11 +380,6 @@ export default function Interoperabilitas() {
           </div>
         </div>
         <div className="mt-8 flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-lg font-bold">
-          <span className="flex items-center gap-3">
-            <Icon name="layers" className="w-7 h-7 text-[#c6f135]" />
-            {t("6 sistem aktif")}
-          </span>
-          <span className="hidden md:block w-0.5 h-10 bg-white/70" />
           <span className="flex items-center gap-3">
             <Icon name="refresh-cw" className="w-7 h-7 text-[#c6f135]" />
             {t("Sinkronisasi real-time")}

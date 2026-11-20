@@ -26,7 +26,7 @@ export default function SolusiIntramedika() {
             <div className="mt-6 w-32 h-1.5 rounded-full bg-[#16a316]" />
             <p className="mt-6 text-[17px] leading-relaxed text-[#1e2a3a]">
               {t(
-                "INTRAMEDIKA membangun ekosistem digital kesehatan generasi berikutnya di Indonesia dengan menghubungkan sarana kesehatan secara utuh. Lebih dari sekadar software, kami menghadirkan fondasi yang andal, interoperabel, dan siap mendukung pelayanan kesehatan yang lebih cerdas, efisien, dan terjangkau.",
+                "INTRAMEDIKA membangun ekosistem digital kesehatan next generation di Indonesia dengan menghubungkan sarana kesehatan secara utuh. Lebih dari sekadar software, kami menghadirkan fondasi yang andal, interoperabel, dan siap mendukung pelayanan kesehatan yang lebih cerdas, efisien, dan terjangkau.",
               )}
             </p>
             <div className="mt-8 flex flex-wrap gap-5">

@@ -107,6 +107,7 @@ export const EN: Record<string, string> = {
   "Akses Pasien": "Patient Access",
   "Penyimpanan Medis": "Medical Image Storage",
   "Hasil Lab": "Lab Results",
+  "Data Pencitraan Medis": "Medical Imaging Data",
   "Standar Global": "Global Standard",
   "6 sistem aktif": "6 active systems",
   "Sinkronisasi real-time": "Real-time sync",
