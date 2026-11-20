@@ -210,7 +210,7 @@ export const EN: Record<string, string> = {
   "GenAI & Kecerdasan Bahasa": "GenAI & Language Intelligence",
   "Ringkasan rekam medis dengan GenAI": "GenAI summarization for medical records",
   "NLP medis berbahasa Indonesia": "Indonesian-language medical NLP",
-  "Pengodean ICD-10 otomatis": "Automated ICD-10 coding",
+  "Pengodean ICD-9&10 otomatis": "Automated ICD-9 & ICD-10 coding",
   "Pencarian cerdas di seluruh rekam medis": "Smart search across all records",
   "Materi edukasi pasien yang dibuat oleh AI": "AI-generated patient education materials",
   "SOLUSI JARINGAN LAYANAN KESEHATAN": "HEALTHCARE NETWORK SOLUTIONS",

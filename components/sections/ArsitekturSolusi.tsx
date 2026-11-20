@@ -103,7 +103,7 @@ export default function ArsitekturSolusi() {
             </a>
           </div>
           <div className="hidden lg:block w-0.5 bg-green-100 rounded-full mb-12" />
-          <div className="grid md:grid-cols-2 gap-5 self-start">
+          <div className="grid md:grid-cols-2 gap-5">
             <div className="card !rounded-2xl p-4 pr-4 flex gap-3.5 items-start">
               <span
                 aria-hidden="true"
@@ -287,7 +287,7 @@ export default function ArsitekturSolusi() {
                     <span className="w-5 h-5 rounded-full bg-[#16a316] text-white grid place-items-center shrink-0 mt-px">
                       <Icon name="check" className="w-3 h-3 stroke-[3.5]" />
                     </span>
-                    <span>{t("Pengodean ICD-10 otomatis")}</span>
+                    <span>{t("Pengodean ICD-9&10 otomatis")}</span>
                   </li>
                   <li className="flex gap-2.5">
                     <span className="w-5 h-5 rounded-full bg-[#16a316] text-white grid place-items-center shrink-0 mt-px">

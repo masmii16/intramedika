@@ -49,7 +49,7 @@ export default function PlatformDigital() {
           <div className="grid md:grid-cols-2 gap-5">
             <div className="card overflow-hidden flex flex-col">
               <div className="relative h-28 bg-gradient-to-r from-mint via-mint/60 to-white flex items-center">
-                <div className="relative z-10 flex items-center gap-3 pl-5 pr-2">
+                <div className="relative z-10 flex items-center gap-3 pl-5 pr-3 shrink-0">
                   <div className="w-12 h-12 rounded-xl bg-white shadow grid place-items-center text-g6 shrink-0">
                     <Icon name="hospital" className="w-7 h-7" />
                   </div>
@@ -60,18 +60,24 @@ export default function PlatformDigital() {
                   </h3>
                 </div>
                 <div
-                  className="absolute right-0 top-0 h-full hidden sm:block"
+                  className="relative self-stretch ml-auto flex-1 min-w-0 max-w-[155px] overflow-hidden hidden sm:block"
                   style={{
-                    aspectRatio: "213/154",
-                    background: "url('/assets/platform-digital.webp') no-repeat",
-                    backgroundSize: "832.86% auto",
-                    backgroundPosition: "53.81% 6.28%",
                     WebkitMaskImage: "linear-gradient(to right,transparent,#000 22%)",
                     maskImage: "linear-gradient(to right,transparent,#000 22%)",
                   }}
-                  role="img"
-                  aria-label=""
-                />
+                >
+                  <div
+                    className="absolute right-0 top-0 h-full"
+                    style={{
+                      aspectRatio: "213/154",
+                      background: "url('/assets/platform-digital.webp') no-repeat",
+                      backgroundSize: "832.86% auto",
+                      backgroundPosition: "53.81% 6.28%",
+                    }}
+                    role="img"
+                    aria-label=""
+                  />
+                </div>
               </div>
               <ul className="px-5 pt-4 space-y-2 text-sm text-slate-700 flex-1">
                 <li className="flex gap-2.5">
@@ -187,7 +193,7 @@ export default function PlatformDigital() {
             </div>
             <div className="card overflow-hidden flex flex-col">
               <div className="relative h-28 bg-gradient-to-r from-mint via-mint/60 to-white flex items-center">
-                <div className="relative z-10 flex items-center gap-3 pl-5 pr-2">
+                <div className="relative z-10 flex items-center gap-3 pl-5 pr-3 shrink-0">
                   <div className="w-12 h-12 rounded-xl bg-white shadow grid place-items-center text-g6 shrink-0">
                     <Icon name="briefcase-medical" className="w-7 h-7" />
                   </div>
@@ -197,10 +203,9 @@ export default function PlatformDigital() {
                   </h3>
                 </div>
                 <div
-                  className="absolute right-0 top-0 h-full hidden sm:block"
+                  className="self-stretch ml-auto flex-1 min-w-0 max-w-[180px] hidden sm:block"
                   style={{
-                    aspectRatio: "540/336",
-                    background: "url('/assets/intradoc-card.webp') right center/cover no-repeat",
+                    background: "url('/assets/intradoc-card.webp') center/cover no-repeat",
                     WebkitMaskImage: "linear-gradient(to right,transparent,#000 14%)",
                     maskImage: "linear-gradient(to right,transparent,#000 14%)",
                   }}
@@ -253,7 +258,7 @@ export default function PlatformDigital() {
             </div>
             <div className="card overflow-hidden flex flex-col">
               <div className="relative h-28 bg-gradient-to-r from-mint via-mint/60 to-white flex items-center">
-                <div className="relative z-10 flex items-center gap-3 pl-5 pr-2">
+                <div className="relative z-10 flex items-center gap-3 pl-5 pr-3 shrink-0">
                   <div className="w-12 h-12 rounded-xl bg-white shadow grid place-items-center text-g6 shrink-0">
                     <Icon name="users" className="w-7 h-7" />
                   </div>
@@ -264,18 +269,24 @@ export default function PlatformDigital() {
                   </h3>
                 </div>
                 <div
-                  className="absolute right-0 top-0 h-full hidden sm:block"
+                  className="relative self-stretch ml-auto flex-1 min-w-0 max-w-[196px] overflow-hidden hidden sm:block"
                   style={{
-                    aspectRatio: "238/136",
-                    background: "url('/assets/platform-digital.webp') no-repeat",
-                    backgroundSize: "745.38% auto",
-                    backgroundPosition: "97.01% 59.12%",
                     WebkitMaskImage: "linear-gradient(to right,transparent,#000 22%)",
                     maskImage: "linear-gradient(to right,transparent,#000 22%)",
                   }}
-                  role="img"
-                  aria-label=""
-                />
+                >
+                  <div
+                    className="absolute right-0 top-0 h-full"
+                    style={{
+                      aspectRatio: "238/136",
+                      background: "url('/assets/platform-digital.webp') no-repeat",
+                      backgroundSize: "745.38% auto",
+                      backgroundPosition: "97.01% 59.12%",
+                    }}
+                    role="img"
+                    aria-label=""
+                  />
+                </div>
               </div>
               <ul className="px-5 pt-4 space-y-2 text-sm text-slate-700 flex-1">
                 <li className="flex gap-2.5">

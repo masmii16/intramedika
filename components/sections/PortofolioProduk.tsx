@@ -103,9 +103,9 @@ export default function PortofolioProduk() {
             </div>
           </div>
           <div className="hidden lg:block w-0.5 self-stretch bg-g6/70 rounded-full" />
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="space-y-4">
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+          <div className="grid md:grid-cols-2 gap-4 lg:self-stretch">
+            <div className="flex flex-col gap-4">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -125,7 +125,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("RUMAH SAKIT / KLINIK")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -145,7 +145,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("Dokter", "s10")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -165,7 +165,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("Cybersher BPJS Kesehatan")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -185,7 +185,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("Keuangan & Akuntansi")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -205,8 +205,8 @@ export default function PortofolioProduk() {
                 </div>
               </div>
             </div>
-            <div className="space-y-4">
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+            <div className="flex flex-col gap-4">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -226,7 +226,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("Sumber Daya Manusia")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -246,7 +246,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("Dashboard Manajemen IES & PMS")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -266,7 +266,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("Platform Analitik Penelitian")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
@@ -286,7 +286,7 @@ export default function PortofolioProduk() {
                   <b className="block text-base sm:text-lg font-extrabold text-navy">{t("Aplikasi Mobile")}</b>
                 </div>
               </div>
-              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px]">
+              <div className="rounded-full bg-white border border-slate-100 shadow-[0_6px_18px_rgba(15,23,42,.08)] hover:shadow-[0_10px_26px_rgba(11,93,46,.16)] hover:-translate-y-0.5 transition flex items-center gap-4 sm:gap-5 pl-5 sm:pl-8 pr-5 py-3 min-h-[84px] lg:flex-1">
                 <span className="w-[88px] shrink-0 grid place-items-center">
                   <span
                     aria-hidden="true"
