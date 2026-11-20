@@ -39,7 +39,7 @@ export const EN: Record<string, string> = {
     "Healthcare facilities manage large volumes of data every day, yet it is often scattered across disconnected systems. This creates silos, slows decision-making, and hinders optimal patient care.",
   "DAMPAK FRAGMENTASI": "IMPACT OF FRAGMENTATION",
   "Data Terpisah": "Siloed Data",
-  "Informasi klinik, operasional, dan keuangan berada di berbagai sistem yang tidak terhubung.":
+  "Informasi klinis, operasional, dan keuangan berada di berbagai sistem yang tidak terhubung.":
     "Clinical, operational, and financial information sits in disconnected systems.",
   "Proses Manual": "Manual Processes",
   "Proses manual dan verifikasi berulang meningkatkan beban administratif dan risiko kesalahan.":
@@ -63,7 +63,7 @@ export const EN: Record<string, string> = {
   "Lebih dari sekadar software.": "More than software.",
   "Fondasi yang terhubung": "A connected foundation",
   "untuk transformasi layanan kesehatan.": "for healthcare transformation.",
-  "INTRAMEDIKA membangun ekosistem digital kesehatan generasi berikutnya di Indonesia dengan menghubungkan sarana kesehatan secara utuh. Lebih dari sekadar software, kami menghadirkan fondasi yang andal, interoperabel, dan siap mendukung pelayanan kesehatan yang lebih cerdas, efisien, dan terjangkau.":
+  "INTRAMEDIKA membangun ekosistem digital kesehatan next generation di Indonesia dengan menghubungkan sarana kesehatan secara utuh. Lebih dari sekadar software, kami menghadirkan fondasi yang andal, interoperabel, dan siap mendukung pelayanan kesehatan yang lebih cerdas, efisien, dan terjangkau.":
     "INTRAMEDIKA is building Indonesia's next-generation digital health ecosystem by connecting healthcare facilities end to end. More than software, we deliver a reliable, interoperable foundation ready to support smarter, more efficient, and more affordable healthcare.",
   "Minta Demo": "Request a Demo",
   "Hubungi Tim Penjualan": "Contact Sales",

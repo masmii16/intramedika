@@ -309,7 +309,7 @@ export default function Interoperabilitas() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex items-center gap-">
+        <div className="mt-12 flex items-center gap-6">
           <span className="hidden md:block flex-1 h-0.5 bg-[#c6f135]" />
           <h3 className="text-center text-2xl md:text-[2rem] font-extrabold tracking-tight">
             {t("Kesiapan Interoperabilitas untuk Ekosistem Layanan Kesehatan Indonesia")}
