@@ -162,7 +162,7 @@ section("⚠️ ", "Peringatan", warnings);
 section("❌", "Error", errors);
 
 if (errors.length) {
-  console.log(`\nGagal: ${errors.length} teks belum diterjemahkan. Tambahkan ke lib/dictionary.ts, atau ke SAME_IN_EN di scripts/check-i18n.mjs bila memang sama di EN.`);
+  console.log(`\nGagal: ${errors.length} masalah terjemahan. Perbaiki lib/dictionary.ts, atau tambahkan ke SAME_IN_EN di scripts/check-i18n.mjs bila teks memang sama di EN.`);
   process.exit(1);
 }
 console.log(`\n✅ Semua teks punya terjemahan.${warnings.length ? ` (${warnings.length} peringatan)` : ""}${infos.length && !process.argv.includes("--verbose") ? ` ${infos.length} t(variabel) — lihat dengan --verbose.` : ""}`);

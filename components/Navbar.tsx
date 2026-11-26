@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLang, type Lang } from "@/lib/i18n";
 import { useModal } from "./ModalProvider";
+import { TEAM_PAGES } from "./Team";
 
 /** Menu navbar dan section yang "dimiliki" tiap menu (untuk garis aktif saat scroll). */
 const MENU = [
@@ -17,7 +18,7 @@ const MENU = [
   { key: "faq", href: "/#faq", label: "F.A.Q", sections: ["faq"] },
 ] as const;
 
-const DIREKSI = "/jajaran-direksi/";
+const PROFIL_HREF = TEAM_PAGES[0].href;
 
 export default function Navbar() {
   const { t, lang, setLang } = useLang();
@@ -25,7 +26,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const path = pathname.replace(/\/$/, "") || "/";
   const isHome = path === "/";
-  const isDireksi = path === "/jajaran-direksi";
+  const isProfil = TEAM_PAGES.some((p) => p.href === `${path}/`);
 
   const [active, setActive] = useState<string | null>("beranda");
   const [scrolled, setScrolled] = useState(false);
@@ -51,17 +52,17 @@ export default function Navbar() {
 
   // Scrollspy (hanya di halaman utama) + latar navbar saat di-scroll
   useEffect(() => {
-    const currentActive = isDireksi ? "profil" : isHome ? "beranda" : null;
+    const currentActive = isProfil ? "profil" : isHome ? "beranda" : null;
     if (!isHome) {
       // eslint-disable-next-line react-hooks/set-state-in-effect -- sinkron dengan rute aktif
       setActive(currentActive);
-      setScrolled(isDireksi || window.scrollY > 10);
-      if (isDireksi) return;
+      setScrolled(isProfil || window.scrollY > 10);
+      if (isProfil) return;
     }
     let tick = false;
     const update = () => {
       tick = false;
-      setScrolled(isDireksi || window.scrollY > 10);
+      setScrolled(isProfil || window.scrollY > 10);
       if (!isHome) return;
       const bar = document.getElementById("topbar");
       const y = window.scrollY + (bar?.offsetHeight ?? 0) + window.innerHeight * 0.25;
@@ -88,7 +89,7 @@ export default function Navbar() {
     update();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [isHome, isDireksi]);
+  }, [isHome, isProfil]);
 
   useEffect(() => {
     moveLine();
@@ -130,23 +131,16 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={toTop}
-          className="relative inline-block font-black italic text-2xl lg:text-[1.75vw] leading-none tracking-tight bg-gradient-to-r from-[#1a24b8] via-[#1f5fd0] to-[#14b385] bg-clip-text text-transparent pr-1"
-          aria-label="INTRAMEDIKA"
+          className="shrink-0 block"
         >
-          INTRAMEDIKA
-          <span className="absolute -top-[0.75em] left-[77%] w-[0.62em] h-[0.62em] rounded-[3px] rotate-12 bg-red-600 grid place-items-center not-italic">
-            <svg
-              viewBox="0 0 24 24"
-              className="w-[75%] h-[75%]"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M3 12h4l3-7 4 14 3-7h4" />
-            </svg>
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element -- logo statis, static export tanpa optimasi gambar */}
+          <img
+            src="/assets/logo-intramedika.png"
+            alt="INTRAMEDIKA"
+            width={967}
+            height={160}
+            className="block h-6 lg:h-[1.45vw] w-auto"
+          />
         </Link>
 
         <nav
@@ -162,10 +156,9 @@ export default function Navbar() {
           ))}
           <div className="navdd">
             <Link
-              href={DIREKSI}
+              href={PROFIL_HREF}
               className={`ddtop${active === "profil" ? " active" : ""}`}
               aria-haspopup="true"
-              aria-current={isDireksi ? "page" : undefined}
             >
               {t("Profil")}
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -173,9 +166,14 @@ export default function Navbar() {
               </svg>
             </Link>
             <div className="ddmenu">
-              <Link href={DIREKSI} className={`ddi${isDireksi ? " active" : ""}`}>
-                {t("Jajaran Direksi")}
-              </Link>
+              {TEAM_PAGES.map((p) => {
+                const current = p.href === `${path}/`;
+                return (
+                  <Link key={p.key} href={p.href} className={`ddi${current ? " active" : ""}`} aria-current={current ? "page" : undefined}>
+                    {t(p.label)}
+                  </Link>
+                );
+              })}
             </div>
           </div>
           {MENU.slice(1).map((m) => (

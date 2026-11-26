@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useLang } from "@/lib/i18n";
 import Icon from "@/components/Icon";
 import { useModal } from "@/components/ModalProvider";
+import { TEAM_PAGES } from "@/components/Team";
 
 export default function Footer() {
   const { t } = useLang();
@@ -157,11 +158,13 @@ export default function Footer() {
           <nav aria-label={t("Perusahaan")}>
             <h3 className="text-sm font-extrabold tracking-[.16em] text-white">{t("PERUSAHAAN")}</h3>
             <ul className="mt-5 space-y-3 text-[15px]">
-              <li>
-                <Link href="/jajaran-direksi/" className="fl">
-                  {t("Jajaran Direksi")}
-                </Link>
-              </li>
+              {TEAM_PAGES.map((p) => (
+                <li key={p.key}>
+                  <Link href={p.href} className="fl">
+                    {t(p.label)}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link href="/#s13" className="fl">
                   {t("Mengapa Intramedika")}

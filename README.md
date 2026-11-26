@@ -22,12 +22,13 @@ Untuk mencoba hasil build secara lokal: `npx serve out`.
 app/
   layout.tsx              Layout global: font, Navbar, Footer, semua popup, provider bahasa & popup
   page.tsx                Halaman utama (menyusun section)
-  jajaran-direksi/page.tsx  Halaman Jajaran Direksi
+  jajaran-manajemen/page.tsx       Halaman "Jajaran Manajemen" (menu Profil)
+  healthcare-specialists/page.tsx  Halaman "Jajaran Healthcare Specialists" (menu Profil)
   globals.css             Tailwind + gaya kustom (dipindahkan dari <style> versi HTML)
 components/
   Navbar.tsx              Navbar fixed, garis menu aktif (scrollspy), dropdown Profil, tombol ID | EN
   Footer.tsx
-  Direksi.tsx             Data & kartu direksi (tambahkan `photo` untuk foto)
+  Team.tsx                Data & kartu kedua halaman tim + daftar menu Profil (TEAM_PAGES)
   Modal.tsx               <dialog> yang dikendalikan React
   ModalProvider.tsx       State popup: openModal / closeModal / openContact(produk)
   Icon.tsx                Ikon lucide-react
@@ -37,6 +38,8 @@ lib/
   i18n.tsx                LangProvider, useLang(), t()
   dictionary.ts           Kamus terjemahan ID → EN (±650 entri)
 public/assets/*.webp      Gambar
+public/assets/tim/*.webp  Foto anggota tim (timpa dengan foto asli beresolusi tinggi, nama file sama)
+public/assets/logo-intramedika.png  Logo navbar (latar transparan)
 ```
 
 ## Bahasa (ID/EN)
