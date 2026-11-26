@@ -35,7 +35,7 @@ components/
   modals/*.tsx            6 popup produk + popup Kontak (form → email)
 lib/
   i18n.tsx                LangProvider, useLang(), t()
-  dictionary.ts           Kamus terjemahan ID → EN (659 entri)
+  dictionary.ts           Kamus terjemahan ID → EN (±650 entri)
 public/assets/*.webp      Gambar
 ```
 
@@ -46,3 +46,6 @@ public/assets/*.webp      Gambar
   Kunci `"s5|Sistem"` berarti terjemahan khusus untuk section `#s5`.
 - Pilihan bahasa disimpan di `localStorage` dan URL (`?lang=en`), tetap terbawa saat pindah halaman.
 - Menambah teks baru: tulis teks Indonesia dengan `t("Teks baru")`, lalu tambahkan `"Teks baru": "New text"` di `dictionary.ts`.
+- Cek kelengkapan terjemahan: `npm run check:i18n` (tambah `-- --verbose` untuk melihat `t(variabel)`).
+  Script ini juga berjalan otomatis sebelum `npm run build`; build **gagal** bila ada `t("...")` tanpa terjemahan.
+  Teks yang memang sama di EN (nama produk, standar, alamat) didaftarkan di `SAME_IN_EN` dalam `scripts/check-i18n.mjs`.
